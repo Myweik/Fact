@@ -212,7 +212,7 @@ QVariant FactMetaData::rawDefaultValue(void) const
     if (_defaultValueAvailable) {
         return _rawDefaultValue;
     } else {
-        qWarning() << "Attempt to access unavailable default value";
+        qWarning() << "Fact name is" << name() << "Attempt to access unavailable default value";
         return QVariant(0);
     }
 }
@@ -223,7 +223,7 @@ void FactMetaData::setRawDefaultValue(const QVariant& rawDefaultValue)
         _rawDefaultValue = rawDefaultValue;
         _defaultValueAvailable = true;
     } else {
-        qWarning() << "Attempt to set default value which is outside min/max range";
+        qWarning()<< "Fact name is" << name() << "Attempt to set default value which is outside min/max range";
     }
 }
 

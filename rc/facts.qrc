@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>VehicleFact.json</file>
+
+    </qresource>
+</RCC>

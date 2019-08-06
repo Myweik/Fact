@@ -43,7 +43,7 @@ public:
     Q_PROPERTY(int          componentId             READ componentId                                        CONSTANT)
     Q_PROPERTY(QStringList  bitmaskStrings          READ bitmaskStrings                                     NOTIFY bitmaskStringsChanged)
     Q_PROPERTY(QVariantList bitmaskValues           READ bitmaskValues                                      NOTIFY bitmaskValuesChanged)
-    Q_PROPERTY(int          decimalPlaces           READ decimalPlaces                                      CONSTANT)
+    Q_PROPERTY(int          decimalPlaces           READ decimalPlaces                                      CONSTANT) //简短说明
     Q_PROPERTY(QVariant     defaultValue            READ cookedDefaultValue                                 CONSTANT)
     Q_PROPERTY(QString      defaultValueString      READ cookedDefaultValueString                           CONSTANT)
     Q_PROPERTY(bool         defaultValueAvailable   READ defaultValueAvailable                              CONSTANT)
@@ -63,7 +63,7 @@ public:
     Q_PROPERTY(QString      name                    READ name                                               CONSTANT)
     Q_PROPERTY(bool         vehicleRebootRequired   READ vehicleRebootRequired                              CONSTANT)
     Q_PROPERTY(bool         qgcRebootRequired       READ qgcRebootRequired                                  CONSTANT)
-    Q_PROPERTY(QString      shortDescription        READ shortDescription                                   CONSTANT)
+    Q_PROPERTY(QString      shortDescription        READ shortDescription                                   CONSTANT) //小数点位数
     Q_PROPERTY(QString      units                   READ cookedUnits                                        CONSTANT)
     Q_PROPERTY(QVariant     value                   READ cookedValue            WRITE setCookedValue        NOTIFY valueChanged)
     Q_PROPERTY(QVariant     rawValue                READ rawValue               WRITE setRawValue           NOTIFY rawValueChanged)
