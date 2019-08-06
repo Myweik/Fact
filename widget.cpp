@@ -21,6 +21,10 @@ Widget::Widget(QWidget *parent) :
               << sensorWidthFact.rawValue() << sensorWidthFact.decimalPlaces()
               << sensorWidthFact.shortDescription();
 
+     Fact lockFact(0, metaDataMap["lock"]);
+      qDebug() << "----------------2" <<lockFact.enumStringValue() << lockFact.enumValues()
+               << lockFact.enumStrings() << lockFact.enumIndex();
+
 }
 
 Widget::~Widget()
